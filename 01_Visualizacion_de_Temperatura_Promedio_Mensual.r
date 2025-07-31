@@ -1,3 +1,4 @@
+# Realizado el 2022-03-26, como asesoramiento de correcición de script.
 # Este script en R realiza un análisis exploratorio y visualización de series de tiempo de temperatura mensual promedio, 
 # desde 1961 hasta 2017, para una estación climática específica (1001)
 # El gráfico final permite visualizar tendencias de largo plazo en la temperatura mensual promedio, 
