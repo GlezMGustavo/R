@@ -1,8 +1,27 @@
+rm(list=ls(all=TRUE)); if(length(dev.list())>0){dev.off()}
 # Realizado el 2022-03-26, como asesoramiento de correcición de script.
-# Este script en R realiza un análisis exploratorio y visualización de series de tiempo de temperatura mensual promedio, 
-# desde 1961 hasta 2017, para una estación climática específica (1001)
-# El gráfico final permite visualizar tendencias de largo plazo en la temperatura mensual promedio, 
-# facilitando la detección de patrones climáticos, cambios estacionales o posibles efectos del cambio climático en la estación analizada.
+# ────────────────────────────────────────────────────────────────────────────────
+# 🌡️ Análisis exploratorio de temperatura mensual promedio (1961–2017)
+#
+# 📍 Descripción:
+# Este script genera una visualización de series de tiempo a partir de datos simulados 
+# de temperatura mensual promedio para una estación climática específica (Estación 1001), 
+# cubriendo el período de 1961 a 2017.
+#
+# 🎯 Objetivo:
+# Proporcionar una herramienta visual para detectar patrones de largo plazo en la temperatura, 
+# incluyendo variaciones estacionales, tendencias generales y posibles señales de cambio climático.
+#
+# 🛠️ Lo que hace el código:
+# - Simula datos mensuales de temperatura con una distribución normal.
+# - Genera un gráfico de línea con `ggplot2` que muestra la evolución temporal.
+# - Incluye una línea de suavizado (`geom_smooth`) para destacar tendencias generales.
+# - Personaliza el eje temporal, etiquetas y diseño del gráfico para facilitar su interpretación.
+#
+# 📊 Utilidad:
+# Esta visualización es útil como parte de un análisis exploratorio inicial en estudios climatológicos, 
+# ayudando a identificar tendencias anómalas, ciclos estacionales o puntos de inflexión relevantes.
+# ────────────────────────────────────────────────────────────────────────────────
 
 #### Librerias
 library(ggplot2)
